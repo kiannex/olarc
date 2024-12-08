@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number System Converter</title>
+  <style>
+    html, body {
+      height: 50%; /* Ensure the body takes the full height */
+      margin: 0; /* Remove default margin */
+    }
+
+    body {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      background-color: white; /* Updated background color */
+    }
+
+    header {
+      background-color: #4CAF50; /* Green background */
+      color: white; /* White text color */
+      padding: 15px 0; /* Increased padding for better spacing */
+      text-align: center; /* Center align text */
+      border-radius: 8px; /* Rounded corners */
+      margin-bottom: 5px; /* Space below the header */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      width: 100%; /* Make header occupy full width */
+    }
+
+    /* Navigation Bar Styles */
+        .navtop {
+            background-color: #4CAF50; /* Blue background for the navigation bar */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 20px; /* Space below the navigation bar */
+            width: 100%; /* Make nav occupy full width */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+
+        .navtop ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: center; /* Center the navigation items */
+        }
+
+        .navtop li {
+            margin: 0 20px; /* Add space between the links */
+        }
+
+        .navtop a {
+            display: block; /* Make the links block elements */
+            color: white; /* White text color */
+            text-decoration: none; /* Remove underline */
+            padding: 15px 25px; /* Padding for better spacing */
+            border-radius: 5px; /* Rounded corners for links */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .navtop a:hover {
+            background-color: #0056b3; /* Darker blue background on hover */
+            transform: scale(1.05); /* Slightly enlarge the link on hover */
+        }
+
+    h1 {
+      margin: 0; /* Remove default margin */
+      font-size: 24px; /* Adjust font size */
+    }
+
+    .container {
+      background: #4CAF50;
+      text-align: left;
+      padding: 20px; /* Adjusted padding */
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 80%; /* Adjusted width */
+      margin: 20px auto; /* Center the container */
+      flex: 1; /* Allow the container to grow and take available space */
+    }
+
+    section.table-container {
+      margin: 20px auto; /* Center the table section */
+      width: 80%; /* Set width for the table section */
+    }
+
+    table {
+      width: 100%; /* Full width */
+      border-collapse: collapse; /* Collapse borders */
+      margin-top: 20px; /* Space above the table */
+    }
+
+    th, td {
+      border: 1px solid #ccc; /* Light border */
+      padding: 8px; /* Padding for cells */
+      text-align: center; /* Center text */
+    }
+
+    th {
+      background-color: #4CAF50; /* Green background for header */
+      color: white; /* White text color */
+    }
+
+      /* Footer */
+      footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            padding: 10px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+    footer img {
+      margin: 0 5px; /* Add margin to the image for spacing */
+      vertical-align: middle;
+    /* Align image with text */
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Number System Converter</h1>
+    </header>
+    <div class="navtop">
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Calculator.html">Calculator</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Welcome to the Number System Conversion Calculator</h1>
+      <p>Using this application, you may quickly convert integers between binary, decimal, octal, and hexadecimal formats. This is the ideal tool for anyone learning computer science or just in need of a fast conversion!</p>
+    </div>
+    <section class="table-container">
+      <h3>Number Conversion Table</h3>
+      <table>
+          <thead>
+              <tr>
+                  <th>Decimal</th>
+                  <th>Binary</th>
+                  <th>Octal</th>
+                  <th>Hexadecimal</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>11</td>
+                  <td>3</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>100</td>
+                  <td>4</td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>101</td>
+                  <td>5</td>
+                  <td>5</td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>1010</td>
+                  <td>12</td>
+                  <td>A</td>
+              </tr>
+              <tr>
+                  <td>15</td>
+                  <td>1111</td>
+                  <td>17</td>
+                  <td>F</td>  
+              </tr>
+          </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <img src="kianne.jpg" alt="Logo" style="width: 50px; height: auto;">
+      <p>&copy; 2024 Number System Converter. Created By Ortega.</p>
+    </footer>
+</body>
+</html>
